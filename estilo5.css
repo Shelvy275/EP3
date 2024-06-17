@@ -1,0 +1,128 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    flex-wrap: nowrap;
+    --color1:#0A2126;
+    --color2:#4c6e75;
+
+}
+
+.cajaprincipal{
+    width: 1255px;
+   margin: 0 auto;
+   background: linear-gradient(to  top left,rgb(252, 223, 204),rgb(255, 147, 46),rgb(255, 234, 222));
+   font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    
+}
+
+#titulo{
+    position: sticky;
+    top: 0px;
+    background-color: white;
+    grid-area: header;
+    
+}
+#titulo1{
+    font-family: "Taviraj", serif;
+    font-size: 100px;
+    color: var(--color1);
+    text-align: center;
+}
+
+#menuprincipal{
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+#mp{margin: 5px 20px 30px 20px;}
+
+#mp a:hover{
+    color:var(--color2)
+}
+
+#mp a{
+    color: var(--color1);
+    text-decoration: none;
+}
+
+
+
+
+#cuerpo{
+    display:grid;
+    grid-template-areas: "header header"
+                          "section article"
+                          "nav nav"
+                          "footer footer"; 
+    grid-template-columns: 5fr 4fr;
+    gap: 10px
+}
+
+#tabla h3{
+    font-family: "Playwrite CO", cursive;
+}
+
+table th, td{
+    border:1px solid white;
+    padding: 15px;  
+    
+}
+
+table{
+    border-collapse: collapse;
+    
+}
+
+
+
+#formulario{
+    grid-area: article;
+    
+}
+
+.nav{
+    grid-area: nav;
+    margin: 10px 10px 10px 100px;
+    border: 15px solid auto white;
+    
+}
+
+#tabla h3{
+    color: orangered;
+    margin-top: 18px;
+    margin-bottom: 20px;
+    font-size: 25px
+}
+
+#tablita{
+    margin: 0px 0px 10px 100px;
+}
+
+#segundocuadro{
+    padding-right: 100px;
+}
+
+
+
+
+
+#pie{
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    grid-area:footer
+}
+
+#ico{ margin: 20px 15px 20px 15px;}
+
+#ico a:hover{
+    color:var(--color2)
+}
+
+#ico a{
+    color: var(--color1);
+    text-decoration: none;
+}
